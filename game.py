@@ -16,10 +16,6 @@ print(f"You chose: '{user_choice}'")
 valid_options = ["rock", "paper", "scissors"]
 
 # breakpoint()
-#if user_choice in valid_options:
-    # computer_choice = random.choice(valid_options)
-    # print("Computerchose:",computer_choice)
-
 if user_choice not in valid_options:
     print("OOPS INVALID TRY AGAIN")
     exit() # quit()
@@ -34,7 +30,8 @@ computer_choice = random.choice(valid_options)
 print("computer chose:", computer_choice)
 
 # DETERMINE THE WINNER
-    # This code is adpted from code in slack by Bonnie during the class 7/12/2022:
+    # This code is ad
+    pted from code in slack by Bonnie during the class 7/12/2022:
     # https://app.slack.com/client/T5XFL5GUE/C5WPFSB52/rimeto_profile/U03K1QDEQFQ
 if user_choice == computer_choice:
     print("It's a tie!")

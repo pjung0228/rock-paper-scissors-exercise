@@ -1,6 +1,8 @@
 import random
+import os
+player_name = os.getenv("PLAYER_NAME", default="Player One")
 
-print ("WELCOME TO ROCK PAPER SCISSORS GAME!!!")
+print (f"WELCOME {player_name} TO ROCK PAPER SCISSORS GAME!!!")
 
 # USER INPUTS
 user_choice = input("Please make a selection ('rock', 'paper', 'scissors'):")
@@ -31,25 +33,25 @@ print("computer chose:", computer_choice)
 
 # DETERMINE THE WINNER
     # This code is ad
-    pted from code in slack by Bonnie during the class 7/12/2022:
+    # adpted from code in slack by Bonnie during the class 7/12/2022:
     # https://app.slack.com/client/T5XFL5GUE/C5WPFSB52/rimeto_profile/U03K1QDEQFQ
 if user_choice == computer_choice:
     print("It's a tie!")
 elif user_choice == "rock":
     if computer_choice == "scissors":
-        print("Rock crushes scissors. You win!")
+        print(f"Rock crushes scissors. {player_name} wins!")
     else:
-        print("Paper covers rock. You lose.")
+        print(f"Paper covers rock. {player_name} lose.")
 elif user_choice == "paper":
     if computer_choice == "rock":
-        print("Paper covers rock. You win!")
+        print(f"Paper covers rock. {player_name} win!")
     else:
-        print("Scissors cuts paper. You lose.")
+        print(f"Scissors cuts paper. {player_name} lose.")
 elif user_choice == "scissors":
     if computer_choice == "paper":
-        print("Scissors cuts paper. You win!")
+        print(f"Scissors cuts paper. {player_name} win!")
     else:
-        print("Rock crushes scissors. You lose.")
+        print(f"Rock crushes scissors. {player_name} lose.")
 
 
 
